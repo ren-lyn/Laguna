@@ -21,7 +21,12 @@
       flex: 1;
     }
 
-    .scrolling-wrapper {
+    .carousel-inner img {
+          height: 500px; /* Adjust height as needed */
+          object-fit: cover;
+    }
+
+    /* //.scrolling-wrapper {
       display: flex;
       flex-wrap: nowrap;
       overflow-x: auto;
@@ -38,13 +43,13 @@
       border-radius: 10px;
     }
 
-    .tour-card {
+    //.tour-card {
       flex: 0 0 auto;
       width: 260px;
       border: 1px solid #e3e3e3;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
-    }
+    } */
 
     section {
       padding-top: 60px;
@@ -116,64 +121,79 @@
 
   
   <!-- Popular Destinations-------------------------------------------------------------------- -->
-  <section class="container">
-    <h2 class="section-title fw-bold">Popular Destinations</h2>
-    <div class="scrolling-wrapper pb-3">
+  <section class="container my-5">
+    <h2 class="section-title fw-bold mb-4">Popular Destinations</h2>
+    <div id="popularDestinationsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="https://www.marxtermind.com/wp-content/uploads/2024/07/Pagsanjan-Falls-Laguna-scaled.jpeg" class="d-block w-100" alt="Pagsanjan Falls">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h5>Pagsanjan Falls</h5>
+            <p>Ride a canoe through canyons and waterfalls in Laguna’s most iconic natural wonder.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_858/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/j2cei5fgpigyp6ofbnez/HiddenValleySpringsPrivateDayTourfromManilabyVinaTour.jpg" class="d-block w-100" alt="Hidden Valley Springs">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h5>Hidden Valley Springs</h5>
+            <p>Relax in lush rainforests and natural hot springs tucked away in Alaminos, Laguna.</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="https://farm4.staticflickr.com/3796/19549964006_9e4ac9d961_z.jpg" class="d-block w-100" alt="Nagcarlan Underground Cemetery">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h5>Nagcarlan Underground Cemetery</h5>
+            <p>Explore a historic and mysterious underground crypt from the Spanish era.</p>
+          </div>
+        </div>
   
-    
-  <div class="card tour-card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ76UIzz5HHV6b3hfMeM5pLQZ6hZcTAoh7tOQ&s" class="card-img-top" alt="Tokyo">
-    <div class="card-body">
-      <h5 class="card-title">Tokyo Tower, Japan</h5>
-      <p class="card-text">Experience futuristic vibes and ancient traditions in Tokyo.</p>
-      <a href="tour1.html" class="btn btn-outline-primary btn-sm">View Details</a>
-    </div>
-  </div>
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/Enchanted_Kingdom_theme_park_%28San_Lorenzo_Road%2C_Santa_Rosa%2C_Laguna%29%282018-08-26%29.jpg/1200px-Enchanted_Kingdom_theme_park_%28San_Lorenzo_Road%2C_Santa_Rosa%2C_Laguna%29%282018-08-26%29.jpg" class="d-block w-100" alt="Enchanted Kingdom">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h5>Enchanted Kingdom</h5>
+            <p>Experience world-class rides and magical attractions in Santa Rosa, Laguna.</p>
+          </div>
+        </div>
   
-  <div class="card tour-card">
-    <img src="https://cdn-imgix.headout.com/tour/30357/TOUR-IMAGE/6cdcf542-452d-4897-beed-76cf68f154e4-1act-de005e04-05d9-4715-96b0-6a089d5c3460.jpg?auto=format&w=1222.3999999999999&h=687.6&q=90&fit=crop&ar=16%3A9&crop=faces" class="card-img-top" alt="New York">
-    <div class="card-body">
-      <h5 class="card-title">Statue of Liberty, NYC</h5>
-      <p class="card-text">Visit the symbol of freedom in the heart of New York Harbor.</p>
-      <a href="tour2.html" class="btn btn-outline-primary btn-sm">View Details</a>
-    </div>
-  </div>
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/9d/dc/66/near-the-summit.jpg?w=1200&h=-1&s=1" class="d-block w-100" alt="Mt. Makiling">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h5>Mt. Makiling</h5>
+            <p>Hike the legendary mountain known for its biodiversity and mythical tales.</p>
+          </div>
+        </div>
   
-  <div class="card tour-card">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Colosseo_2020.jpg/1200px-Colosseo_2020.jpg" class="card-img-top" alt="Rome">
-    <div class="card-body">
-      <h5 class="card-title">Colosseum, Rome</h5>
-      <p class="card-text">Step back in time with gladiators and ancient wonders.</p>
-      <a href="tour3.html" class="btn btn-outline-primary btn-sm">View Details</a>
+        <!-- Slide 6 -->
+        <div class="carousel-item">
+          <img src="https://travelthroughparadise.com/images/Articles/Rizal_Shrine/Jose%20Rizal%20Shrine%207.jpg" class="d-block w-100" alt="Rizal Shrine">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+            <h5>Rizal Shrine</h5>
+            <p>Visit the ancestral home of national hero Dr. Jose Rizal in Calamba City.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#popularDestinationsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#popularDestinationsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
     </div>
-  </div>
-  
-  <div class="card tour-card">
-    <img src="https://media.architecturaldigest.com/photos/63d82d299dd44a3242d15ade/16:9/w_2580,c_limit/GettyImages-982774858.jpg" class="card-img-top" alt="Sydney">
-    <div class="card-body">
-      <h5 class="card-title">Sydney Opera House</h5>
-      <p class="card-text">Enjoy harbor views and architectural brilliance in Australia.</p>
-      <a href="tour4.html" class="btn btn-outline-primary btn-sm">View Details</a>
-    </div>
-  </div>
-  
-  <div class="card tour-card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYMrh10wRtoZRYa8ze5o9CLEqjo0rpas81qA&s" class="card-img-top" alt="Dubai">
-    <div class="card-body">
-      <h5 class="card-title">Burj Khalifa, Dubai</h5>
-      <p class="card-text">Touch the skies with the tallest building in the world.</p>
-      <a href="tour5.html" class="btn btn-outline-primary btn-sm">View Details</a>
-    </div>
-  </div>
-  
-  <div class="card tour-card">
-    <img src="https://i.natgeofe.com/n/535f3cba-f8bb-4df2-b0c5-aaca16e9ff31/giza-plateau-pyramids.jpg" class="card-img-top" alt="Cairo">
-    <div class="card-body">
-      <h5 class="card-title">Pyramids of Giza, Egypt</h5>
-      <p class="card-text">Uncover ancient secrets beneath the desert sands.</p>
-      <a href="tour6.html" class="btn btn-outline-primary btn-sm">View Details</a>
-    </div>
-  </div>
+  </section>
   
       
       
