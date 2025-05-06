@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tokyo Tower, Japan - TravelTour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #003d5b;      
+      --secondary-color: #30638e;    
+      --deep-blue: #264653;          /* Sky Gray Blue */
+      --light-bg: #c2d4e4;           /* Cream White */
+      --dark-text: #2B2B2B;          /* Slate Black */
+    }
+    
+    body, html {
+      height: 100%;
+    }
+
+    .bg-primary-custom {
+      background-color: var(--primary-color) !important;
+      color: white;
+    }
+
+    .bg-secondary-custom {
+      background-color: var(--secondary-color) !important;
+    }
+
+    .bg-light-custom {
+      background-color: var(--light-bg) !important;
+    }
+
+    .bg-deep-blue {
+      background-color: var(--deep-blue) !important;
+      color: white;
+    }
+
+    .text-dark-custom {
+      color: var(--dark-text) !important;
+    }
+
+
+    /* Footer styling */
+    .footer-bg {
+      background-color: var(--deep-blue);
+      color: white;
+    }
+
+    .text-secondary-custom{
+      color: var(--secondary-color) !important;
+    }
+
+    
+
+    .hero {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: var(--white);
+      border-radius: 1rem;
+      border: 1px solid var(--primary-color); /* added border color */
+    
+    }
+
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    p{
+      line-height: 2;
+    }
+
+    .image-fixed {
+      height: 600px;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
+</head>
+<body class = "wrapper">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">TravelTour</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Taytay Falls</h1>
+  <img  class="img-fluid rounded image-fixed" src="https://patriziadacanay.wordpress.com/wp-content/uploads/2015/06/wpid-2015-06-06-11-37-30-1-jpg.jpeg" alt="Taytay Falls">
+
+
+  <div class="description">
+    <h4>Refresh and Reconnect at Taytay Falls</h4>
+    <p>
+      <br>
+      Nature’s Coolest Secret in Majayjay, Laguna!
+
+      Looking for a serene escape from the heat and the hustle? Taytay Falls, also known as Imelda Falls, is a hidden paradise tucked away in the quiet town of Majayjay, Laguna. Famous for its crystal-clear, ice-cold waters flowing straight from Mt. Banahaw, Taytay Falls is the perfect retreat for campers, hikers, and anyone craving a refreshing dip in nature’s pool.
+
+      Surrounded by thick forest and fresh mountain air, Taytay Falls offers a calm and peaceful ambiance—ideal for picnics, swimming, and nature walks. The short trek to the falls is easy and enjoyable, making it great for families and first-time adventurers.
+
+      With its untouched beauty and cool, cascading waters, Taytay Falls is a must-visit destination for those seeking relaxation, natural beauty, and a break from the ordinary.
+
+      Discover the chill of Taytay Falls—a simple yet unforgettable nature experience in Laguna!</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer-bg">
+  <p>&copy; 2025 TravelTour. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

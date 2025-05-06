@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tokyo Tower, Japan - TravelTour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #003d5b;      
+      --secondary-color: #30638e;    
+      --deep-blue: #264653;          /* Sky Gray Blue */
+      --light-bg: #c2d4e4;           /* Cream White */
+      --dark-text: #2B2B2B;          /* Slate Black */
+    }
+    
+    body, html {
+      height: 100%;
+    }
+
+    .bg-primary-custom {
+      background-color: var(--primary-color) !important;
+      color: white;
+    }
+
+    .bg-secondary-custom {
+      background-color: var(--secondary-color) !important;
+    }
+
+    .bg-light-custom {
+      background-color: var(--light-bg) !important;
+    }
+
+    .bg-deep-blue {
+      background-color: var(--deep-blue) !important;
+      color: white;
+    }
+
+    .text-dark-custom {
+      color: var(--dark-text) !important;
+    }
+
+
+    /* Footer styling */
+    .footer-bg {
+      background-color: var(--deep-blue);
+      color: white;
+    }
+
+    .text-secondary-custom{
+      color: var(--secondary-color) !important;
+    }
+
+    
+
+    .hero {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: var(--white);
+      border-radius: 1rem;
+      border: 1px solid var(--primary-color); /* added border color */
+    
+    }
+
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    p{
+      line-height: 2;
+    }
+
+    .image-fixed {
+      height: 600px;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
+</head>
+<body class = "wrapper">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">TravelTour</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Mount Banahaw</h1>
+  <img  class="img-fluid rounded image-fixed" src="https://www.funinthephilippines.com/wp-content/uploads/2023/09/cover-photo-banahaw.jpg" alt="Mount Banahaw">
+
+
+  <div class="description">
+    <h4>Experience the Sacred Majesty of Mount Banahaw</h4>
+    <p>
+      <br>
+      A Journey of Nature, Spirituality, and Discovery Awaits
+
+    Rising to over 2,100 meters, Mount Banahaw is the highest peak in the Calabarzon region and one of the Philippines’ most revered mountains. Located between the provinces of Laguna and Quezon, this active stratovolcano is more than just a hiking destination—it’s a sacred site, a biodiversity haven, and a place of deep spiritual significance.
+
+    Often called a “Holy Mountain,” Mount Banahaw has long been a pilgrimage site for mystics, faith healers, and cultural devotees, who believe its slopes are blessed with healing energy. Along the trails, you’ll encounter natural springs, caves, rock formations, and sacred sites where rituals and prayers are still performed today.
+
+    For trekkers, the mountain offers challenging climbs through mossy forests, steep ascents, and rewarding summit views of neighboring peaks and distant islands. It is part of the Mounts Banahaw–San Cristobal Protected Landscape, ensuring the conservation of its rich flora and fauna.
+
+    Whether you're seeking spiritual renewal, ecological exploration, or mountain adventure, Mount Banahaw promises a profound and unforgettable experience.
+
+    Climb with purpose—discover the soul of Mount Banahaw.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer-bg">
+  <p>&copy; 2025 TravelTour. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

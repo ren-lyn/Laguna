@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tokyo Tower, Japan - TravelTour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #003d5b;      
+      --secondary-color: #30638e;    
+      --deep-blue: #264653;          /* Sky Gray Blue */
+      --light-bg: #c2d4e4;           /* Cream White */
+      --dark-text: #2B2B2B;          /* Slate Black */
+    }
+    
+    body, html {
+      height: 100%;
+    }
+
+    .bg-primary-custom {
+      background-color: var(--primary-color) !important;
+      color: white;
+    }
+
+    .bg-secondary-custom {
+      background-color: var(--secondary-color) !important;
+    }
+
+    .bg-light-custom {
+      background-color: var(--light-bg) !important;
+    }
+
+    .bg-deep-blue {
+      background-color: var(--deep-blue) !important;
+      color: white;
+    }
+
+    .text-dark-custom {
+      color: var(--dark-text) !important;
+    }
+
+
+    /* Footer styling */
+    .footer-bg {
+      background-color: var(--deep-blue);
+      color: white;
+    }
+
+    .text-secondary-custom{
+      color: var(--secondary-color) !important;
+    }
+
+    
+
+    .hero {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: var(--white);
+      border-radius: 1rem;
+      border: 1px solid var(--primary-color); /* added border color */
+    
+    }
+
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    p{
+      line-height: 2;
+    }
+
+    .image-fixed {
+      height: 600px;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
+</head>
+<body class = "wrapper">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">TravelTour</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Hidden Valley Springs</h1>
+  <img  class="img-fluid rounded image-fixed" src="https://tourismo-filipino.com/wp-content/uploads/2023/02/1-79.jpg" alt="Hidden Valley Springs">
+
+
+  <div class="description">
+    <h4>Escape to Paradise at Hidden Valley Springs in Laguna</h4>
+    <p>
+      <br>
+      Where Nature's Tranquility Meets Rejuvenating Warmth
+
+      Nestled in the lush hills of San Pablo, Laguna, Hidden Valley Springs is a serene oasis offering a refreshing retreat from the hustle and bustle of city life. Known for its healing hot springs and tranquil surroundings, this tropical haven invites visitors to unwind, relax, and reconnect with nature.
+      
+      Immerse yourself in the soothing warmth of natural hot springs, surrounded by towering trees and vibrant flora. The resort’s crystal-clear pools, fed by volcanic springs, are perfect for a rejuvenating soak. Whether you choose to relax in the secluded pools, wander along nature trails, or simply enjoy the cool mountain air, Hidden Valley Springs offers a peaceful escape that feels like a world of its own.
+      
+      Explore the resort’s stunning gardens, picturesque waterfalls, and scenic picnic areas, or indulge in a pampering spa treatment to enhance your relaxation. Hidden Valley Springs also offers guided tours, allowing you to learn more about the resort’s rich history, unique ecosystems, and the healing properties of its hot springs.
+      
+      A sanctuary of peace and beauty, Hidden Valley Springs is the ideal destination for nature lovers, wellness seekers, and anyone in search of a rejuvenating escape.
+      
+      Come experience the magic of Hidden Valley Springs—where nature’s serenity and healing powers await.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer-bg">
+  <p>&copy; 2025 TravelTour. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

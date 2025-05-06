@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tokyo Tower, Japan - TravelTour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #003d5b;      
+      --secondary-color: #30638e;    
+      --deep-blue: #264653;          /* Sky Gray Blue */
+      --light-bg: #c2d4e4;           /* Cream White */
+      --dark-text: #2B2B2B;          /* Slate Black */
+    }
+    
+    body, html {
+      height: 100%;
+    }
+
+    .bg-primary-custom {
+      background-color: var(--primary-color) !important;
+      color: white;
+    }
+
+    .bg-secondary-custom {
+      background-color: var(--secondary-color) !important;
+    }
+
+    .bg-light-custom {
+      background-color: var(--light-bg) !important;
+    }
+
+    .bg-deep-blue {
+      background-color: var(--deep-blue) !important;
+      color: white;
+    }
+
+    .text-dark-custom {
+      color: var(--dark-text) !important;
+    }
+
+
+    /* Footer styling */
+    .footer-bg {
+      background-color: var(--deep-blue);
+      color: white;
+    }
+
+    .text-secondary-custom{
+      color: var(--secondary-color) !important;
+    }
+
+    
+
+    .hero {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: var(--white);
+      border-radius: 1rem;
+      border: 1px solid var(--primary-color); /* added border color */
+    
+    }
+
+
+    .hero h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .description {
+      margin-top: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+      border-top: 1px solid #e5e7eb;
+    }
+
+    p{
+      line-height: 2;
+    }
+
+    .image-fixed {
+      height: 600px;
+      object-fit: cover;
+      width: 100%;
+    }
+  </style>
+</head>
+<body class = "wrapper">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">TravelTour</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Tours</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Enchanted Kingdom</h1>
+  <img  class="img-fluid rounded image-fixed" src="https://juancarlo.ph/wp-content/uploads/2024/07/enchanted_kingdom_section_2.jpg" alt="Enchanted Kingdom">
+
+
+  <div class="description">
+    <h4>Experience the Magic at Enchanted Kingdom in Santa Rosa, Laguna</h4>
+    <p>
+      <br>
+      Where Adventure and Fantasy Come to Life
+
+      Step into a world of enchantment and excitement at Enchanted Kingdom, the premier theme park in the Philippines, located in the heart of Santa Rosa, Laguna. Whether you’re seeking thrilling rides, family-friendly attractions, or captivating shows, this magical destination promises an unforgettable experience for guests of all ages.
+      
+      Embark on an exhilarating journey through five fantastical worlds: from the gravity-defying rides in the Spaceport to the whimsical charm of Brooklyn Place. Don't miss the iconic Rialto and Ferris Wheel that provide breathtaking views of the park. Let the kids enjoy Boulderville's interactive attractions or indulge in the culinary delights offered at the park’s themed restaurants.
+      
+      Enchanted Kingdom is not just a theme park—it's a realm where joy, wonder, and imagination flourish. With regular events, seasonal festivals, and special shows, there’s always something new to explore. It’s a place where families make memories, friends share laughs, and visitors create magical moments that will last a lifetime.
+      
+      Come and discover a world of thrills and enchantment at Enchanted Kingdom—the adventure awaits at every corner!</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer-bg">
+  <p>&copy; 2025 TravelTour. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
