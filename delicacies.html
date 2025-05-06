@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tourist Spots - TravelTour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .scrolling-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 1.2rem;
+      padding-bottom: 1rem;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .scrolling-wrapper::-webkit-scrollbar-thumb {
+      background-color: #0d6efd;
+      border-radius: 10px;
+    }
+
+    .tour-card {
+      flex: 0 0 auto;
+      width: 260px;
+      border: 1px solid #e3e3e3;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    section {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    .section-title {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .bg-lightblue {
+      background-color: #f3f9ff;
+    }
+  </style>
+</head>
+<body class="wrapper">
+
+<!-- Navbar -->
+
+
+<!-- Header -->
+<header class="bg-primary text-white text-center py-5">
+    <div class="container">
+      <h1 class="display-5 fw-semibold">Famous Delicacies in Laguna</h1>
+      <p class="lead">"Savor the Heart of Laguna — Where Every Bite Tells a Story."</p>
+      <h5 id="userGreeting" class="mt-4 fw-light"></h5>
+    </div>
+  </header>
+  
+  <!--Los Baños-------------------------------------------------------------------- -->
+  <section>
+  <section class="container">
+    <h2 class="section-title fw-bold">Popular Delicacies in Los Baños</h2>
+    <div class="scrolling-wrapper pb-3">
+  
+    
+  <div class="card tour-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnaHcpI-8chgkGKDIkNGXgQf_vcM-qR1T2_A&s" class="card-img-top" alt="Tokyo">
+    <div class="card-body">
+      <h5 class="card-title">Buko Pie</h5>
+      <p class="card-text"> Isang kilalang delicacy na gawa sa malambot na laman ng buko at matamis na custard sa loob ng flaky na crust. Orihinal na nilikha ng Pahud sisters sa Los Baños.</p>
+    </div>
+  </div>
+  
+  <div class="card tour-card">
+    <img src="https://down-ph.img.susercontent.com/file/c0c094b219c45f368b9c2a21d5a81eac" class="card-img-top" alt="New York">
+    <div class="card-body">
+      <h5 class="card-title">Mer-Nel’s Chocolate Cake</h5>
+      <p class="card-text">Isang moist at matamis na chocolate cake na paborito ng mga lokal at bisita.</p>
+    </div>
+  </div>
+  
+  <div class="card tour-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8wJJilf51ANXb2kzdeEbx-WbY2L2YJunc8A&s" class="card-img-top" alt="Rome">
+    <div class="card-body">
+      <h5 class="card-title">Cassava Cake</h5>
+      <p class="card-text">  Isang tradisyonal na kakanin na gawa sa ginadgad na cassava, gatas, at itlog, na may malambot at matamis na lasa.
+    </div>
+  </div>
+  
+  <div class="card tour-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTJhwflnV7HfftDIgG8_8cbw0MF02aOat-Wg&s" class="card-img-top" alt="Sydney">
+    <div class="card-body">
+      <h5 class="card-title">Espasol</h5>
+      <p class="card-text">Cylindrical rice cake na gawa sa rice flour at coconut milk, na may toasted rice flour coating.</p>
+    </div>
+  </div>
+  
+  <div class="card tour-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe7Bc9PJ8247Bx6NFsOl5tnHc9Vky_stmc0Q&s" class="card-img-top" alt="Dubai">
+    <div class="card-body">
+      <h5 class="card-title">Ube Halaya</h5>
+      <p class="card-text">Matamis na dessert na gawa sa nilutong ube, madalas na ginagamit bilang palaman o panghimagas.</p>
+    </div>
+  </div>
+  
+  <div class="card tour-card">
+    <img src="https://www.kkday.com/en-ph/blog/wp-content/uploads/philippines_laguna_tio_casio_bibingka_de_macapuno.jpg" class="card-img-top" alt="Cairo">
+    <div class="card-body">
+      <h5 class="card-title">Bibingka</h5>
+      <p class="card-text">Tradisyonal na rice cake na niluluto sa clay pot na may uling sa ibabaw at ilalim, kadalasang may toppings na itlog na maalat at keso.</p>
+    </div>
+  </div>
+</section>
+
+ <!--Santa Cruz-------------------------------------------------------------------- -->
+ <section>
+  <section class="container">
+    <h2 class="section-title fw-bold">Popular Delicacies in Santa Cruz</h2>
+    <div class="scrolling-wrapper pb-3">
+  
+    
+  <div class="card tour-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnaHcpI-8chgkGKDIkNGXgQf_vcM-qR1T2_A&s" class="card-img-top" alt="Tokyo">
+    <div class="card-body">
+      <h5 class="card-title"> Kesong Puti</h5>
+      <p class="card-text">Malambot at maalat na puting keso na gawa sa gatas ng kalabaw, karaniwang kinakain kasama ng mainit na pandesal.</p>
+    </div>
+  </div>
+  
+  <div class="card tour-card">
+    <img src="https://down-ph.img.susercontent.com/file/c0c094b219c45f368b9c2a21d5a81eac" class="card-img-top" alt="New York">
+    <div class="card-body">
+      <h5 class="card-title">Bibingka de Macapuno</h5>
+      <p class="card-text">Rice cake na may macapuno filling, na may malambot at matamis na lasa.</p>
+    </div>
+  </div>
+  
+  <div class="card tour-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8wJJilf51ANXb2kzdeEbx-WbY2L2YJunc8A&s" class="card-img-top" alt="Rome">
+    <div class="card-body">
+      <h5 class="card-title"> Uraro (Arrowroot Cookies)</h5>
+      <p class="card-text">Malutong at malambot na cookies na gawa sa arrowroot flour, kadalasang may hugis bulaklak.
+    </div>
+  </div>
+  
+  <div class="card tour-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTJhwflnV7HfftDIgG8_8cbw0MF02aOat-Wg&s" class="card-img-top" alt="Sydney">
+    <div class="card-body">
+      <h5 class="card-title">Espasol</h5>
+      <p class="card-text">Katulad ng sa Los Baños, isang matamis na kakanin na gawa sa rice flour at coconut milk.</p>
+    </div>
+  </div>
+  
+  <div class="card tour-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe7Bc9PJ8247Bx6NFsOl5tnHc9Vky_stmc0Q&s" class="card-img-top" alt="Dubai">
+    <div class="card-body">
+      <h5 class="card-title">Puto</h5>
+      <p class="card-text">Malambot na rice cake na kadalasang may toppings na keso at itlog na maalat.</p>
+    </div>
+  </div>
+  
+  <div class="card tour-card">
+    <img src="https://www.kkday.com/en-ph/blog/wp-content/uploads/philippines_laguna_tio_casio_bibingka_de_macapuno.jpg" class="card-img-top" alt="Cairo">
+    <div class="card-body">
+      <h5 class="card-title">Pastillas</h5>
+      <p class="card-text">Matamis na kendi na gawa sa condensed milk at asukal, kadalasang binabalot sa makulay na papel.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
