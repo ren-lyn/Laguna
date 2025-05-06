@@ -64,12 +64,90 @@
     .bg-lightblue {
       background-color: #f3f9ff;
     }
+
+    .g-image{
+      height: 331px;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px); /* Elevate the card */
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Add shadow for floating effect */
+    }
+
+   /* Define custom color variables */
+    :root {
+      --primary-color: #003d5b;      /* Emerald Green */
+      --secondary-color: #30638e;    /* Sunflower Yellow */
+
+      --deep-blue: #264653;          /* Sky Gray Blue */
+      --light-bg: #c2d4e4;           /* Cream White */
+      --dark-text: #2B2B2B;          /* Slate Black */
+    }
+
+    /* Common Section Styling */
+    .bg-primary-custom {
+      background-color: var(--primary-color) !important;
+      color: white;
+    }
+
+    .bg-secondary-custom {
+      background-color: var(--secondary-color) !important;
+    }
+
+    .bg-light-custom {
+      background-color: var(--light-bg) !important;
+    }
+
+    .bg-deep-blue {
+      background-color: var(--deep-blue) !important;
+      color: white;
+    }
+
+    .text-dark-custom {
+      color: var(--dark-text) !important;
+    }
+
+    /* Button Styles */
+    .btn-accent {
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+    }
+    .btn-accent:hover {
+      background-color: #003d5b;
+      color: white;
+    }
+
+    /* Optional: Header Styling */
+    .section-header {
+      color: var(--primary-color);
+      font-weight: bold;
+    }
+
+    /* Footer styling */
+    .footer-bg {
+      background-color: var(--deep-blue);
+      color: white;
+    }
+
+    .text-secondary-custom{
+      color: var(--secondary-color) !important;
+    }
+
+    
+
+   
+
   </style>
 </head>
 <body class="wrapper">
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom shadow-sm">
   <div class="container">
     <a class="navbar-brand fw-bold" href="index.html">TravelTour</a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
@@ -87,7 +165,7 @@
 </nav>
 
 <!-- Header -->
-<header class="bg-primary text-white text-center py-5">
+<header class="bg-secondary-custom text-white text-center py-5">
     <div class="container">
       <h1 class="display-5 fw-semibold">Explore Our Top 10 Tourist Spots</h1>
       <p class="lead">Discover the world's most iconic destinations!</p>
@@ -98,7 +176,7 @@
   <!-- Brief History Section -->
 <section class="bg-white py-5 mt-4">
   <div class="container">
-    <div class = "bg-lightblue shadow rounded-4 p-5 " style="min-height: 60vh;">
+    <div class = "bg-light-custom shadow rounded-4 p-5 " style="min-height: 60vh;">
       <h2 class="section-title fw-bold text-center">Brief History of Laguna Province</h2>
           <div class="row align-items-center">
             <div class="col-md-6">
@@ -199,20 +277,330 @@
       <!-- Add more destination cards here like El Nido, Chocolate Hills, etc. -->
     </div>
   </div>
+
+  <div class="container my-5">
+    <h2 class="text-center mb-5 display-5 fw-bold text-secondary-custom">Top 20 Tourist Spots</h2>
   
+    <div class="row g-4">
+      <!-- Card 1: Pagsanjan Falls -->
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <img class = "g-image" src="https://cdn.getyourguide.com/img/tour/4bd68b9e3e08c.png/145.jpg" class="card-img-top" alt="Pagsanjan Falls">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Pagsanjan Falls, Cavinti Laguna</h5>
+            <p class="card-text small text-muted">
+              A majestic three-tiered waterfall accessible via an exhilarating canoe ride through the Pagsanjan Gorge or a hike from Cavinti. 
+            </p>
+            <a href="tour1.html" class="btn btn-accent">View More</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2: Hulugan Falls -->
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm">
+          <img class = "g-image" src="https://www.thepoortraveler.net/wp-content/uploads/2016/08/Hulugan-Falls.jpg" class="card-img-top" alt="Hulugan Falls">
+          <div class="card-body">
+            <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Hulugan Falls, Luisina Laguna</h5>
+            <p class="card-text small text-muted">
+              A towering 71-meter waterfall in Luisiana, offering a rewarding trek through lush forests.
+            </p>
+            <a href="tour2.html" class="btn btn-accent">View More</a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3: Taytay Falls -->
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://patriziadacanay.wordpress.com/wp-content/uploads/2015/06/wpid-2015-06-06-11-37-30-1-jpg.jpeg" class="card-img-top" alt="Taytay Falls">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Taytay Falls, Majayjay Laguna</h5>
+              <p class="card-text small text-muted">
+                Located in Majayjay, this serene waterfall is known for its cold, clear waters sourced from Mount Banahaw. 
+              </p>
+              <a href="tour3.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Buruwisan Falls -->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxdbpmSN6aZ_4ALTSZqgyys5K2sLjw5lxhKCO_Pqx9VwLNp91qYvUyGpGVphKHCYwxAQnVB8f3pFZOgcymnY76Esos8WIOq4JtR5xUHjj7VjPnyiOhsxMGrrHfBMi0S_yxSMPeiwFNcEZG/s920/mt-romelo-07.jpg" class="card-img-top" alt="Buruwisan Falls">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Buriwisan Falls, Siniloan Laguna</h5>
+              <p class="card-text small text-muted">
+                Situated in Siniloan, this picturesque waterfall is a favorite among campers and nature enthusiasts.
+              </p>
+              <a href="tour4.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Seven Lakes of San Pablo -->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://live.staticflickr.com/65535/53591019206_2bd7e2d274_h.jpg" class="card-img-top" alt="Seven Lakes of San Pablo">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Seven Lakes of San Pablo, San Pablo Laguna</h5>
+              <p class="card-text small text-muted">
+                A collection of volcanic crater lakes, including Lake Pandin and Lake Yambo, ideal for bamboo rafting and picnics.
+              </p>
+              <a href="tour5.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mount Makiling -->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkDAX4P2rkxCdLMb3FfGUj4emOzOhB2Cj0PZsZFxK4OTCVDI_hyphenhyphenjKMob7FX8sGAyx9-1hnJr6oUCCd8oZ3kBAmZSNImtqkOf-wIxZPcKTnEESvFme8dOOtyxLurGqhXIeD73OPIGL28us/s1600/Laguna+Mt.+Makiling.jpg" class="card-img-top" alt= "Mount Makiling">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Mount Makiling </h5>
+              <p class="card-text small text-muted">
+                A dormant volcano straddling Los Baños and Batangas, popular for hiking and bird-watching.
+              </p>
+              <a href="tour6.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Mount Banahaw -->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://www.funinthephilippines.com/wp-content/uploads/2023/09/cover-photo-banahaw.jpg" class="card-img-top" alt="Mount Banahaw">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Mount Banahaw</h5>
+              <p class="card-text small text-muted">
+                A sacred mountain shared with Quezon Province, known for its spiritual significance and biodiversity. 
+              </p>
+              <a href="tour7.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+        
+        <!--Rizal Shrine in Calamba -->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://travelthroughparadise.com/images/Articles/Rizal_Shrine/Jose%20Rizal%20Shrine%207.jpg" class="card-img-top" alt="Rizal Shrine in Calamba">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Rizal Shrine in Calamba</h5>
+              <p class="card-text small text-muted">
+                The ancestral home, now a museum, of Dr. José Rizal, the Philippines' national hero.
+              </p>
+              <a href="tour8.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Nagcarlan Underground Cemetery-->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://img.atlasobscura.com/ppvY_LNWAXKNMQ-6g3EGExJhVbITrpFMe1kmhHBoghM/rt:fit/w:1200/q:80/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy8zZWJh/NzZiOC0zZTNlLTQx/YmUtYmZkMi0yNTE5/ZDMzMDgzMDgwZDgz/MTUzNGRhNTI3NGU5/ZTZfRFNDRjI4NzIu/SlBH.jpg" class="card-img-top" alt="Nagcarlan Underground Cemetery">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Nagcarlan Underground Cemetery</h5>
+              <p class="card-text small text-muted">
+                A unique 19th-century subterranean crypt beneath a Baroque-style chapel, reflecting Spanish colonial architecture.
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!--St. John the Baptist Church in Liliw-->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://primer.com.ph/travel/wp-content/uploads/sites/6/2017/08/featured-1.jpg" class="card-img-top" alt="St. John the Baptist Church in Liliw">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">St. John the Baptist Church in Liliw</h5>
+              <p class="card-text small text-muted">
+                A historic church known for its red-brick façade and intricate interiors, dating back to the Spanish era. 
+                <br>
+                <br>
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+         <!--Saint Gregory the Great Parish Church in Majayjay -->
+         <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://upload.wikimedia.org/wikipedia/commons/9/90/Saint_Gregory_the_Great_Parish_Church.jpg" class="card-img-top" alt="Saint Gregory the Great Parish Church in Majayjay ">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Saint Gregory the Great Parish Church in Majayjay </h5>
+              <p class="card-text small text-muted">
+                One of the oldest churches in the Philippines, showcasing centuries-old religious art and architecture.
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Pakil Church (St. Peter of Alcantara Parish) -->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://i.redd.it/abx2375swvz91.jpg" class="card-img-top" alt="Pakil Church (St. Peter of Alcantara Parish) ">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-customfw-bold fs-6">Pakil Church (St. Peter of Alcantara Parish)</h5>
+              <p class="card-text small text-muted">
+                Famous for housing the image of Our Lady of Turumba and its annual religious festivals.
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Pila Heritage Town -->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://upload.wikimedia.org/wikipedia/commons/2/22/Pila_Municipal_Center.JPG" class="card-img-top" alt="Pila Heritage Town">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Pila Heritage Town</h5>
+              <p class="card-text small text-muted">
+                Pila in Laguna is a National Historical Landmark featuring well-preserved Spanish-era houses and a charming town plaza.
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Enchanted Kingdom-->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://juancarlo.ph/wp-content/uploads/2024/07/enchanted_kingdom_section_2.jpg" class="card-img-top" alt="Enchanted Kingdom">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Enchanted Kingdom</h5>
+              <p class="card-text small text-muted">
+                A 25-hectare amusement park in Santa Rosa offering themed zones, thrilling rides, and family-friendly attractions. 
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Hidden Valley Springs-->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://tourismo-filipino.com/wp-content/uploads/2023/02/1-79.jpg" class="card-img-top" alt="Hidden Valley Springs">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Hidden Valley Springs, Calauan Laguna</h5>
+              <p class="card-text small text-muted">
+                A secluded resort in Caluan featuring natural hot springs, waterfalls, and lush tropical gardens.
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Bato Springs Resort-->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://media-cdn.tripadvisor.com/media/photo-p/13/06/07/1c/bato-springs.jpg" class="card-img-top" alt="Bato Springs Resort">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Bato Springs Resort, San Pablo Laguna</h5>
+              <p class="card-text small text-muted">
+                Located in San Pablo, this resort offers cold spring pools surrounded by verdant landscapes.
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Laresio Lakeside Resort-->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://image.kkday.com/v2/image/get/w_960%2Cc_fit%2Cq_55%2Ct_webp/s1.kkday.com/product_133209/20220913091712_IK8xA/jpg" class="card-img-top" alt="Laresio Lakeside Resort">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Laresio Lakeside Resort</h5>
+              <p class="card-text small text-muted">
+                Situated in Los Baños, it offers adventure activities like zip-lining, kayaking, and cliff diving by the lake. 
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Villa Escudero Plantations and Resort-->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://s3.amazonaws.com/iomedia-s3/media/celebrities/20500/products/villaescuderoexteriormuseum__L.jpg" class="card-img-top" alt="Villa Escudero Plantations and Resort">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Villa Escudero Plantations and Resort</h5>
+              <p class="card-text small text-muted">
+                A cultural resort straddling Laguna and Quezon, known for its waterfall restaurant and museum of Filipino artifacts. 
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Cavinti Underground River and Caves Complex-->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://scontent.fmnl17-8.fna.fbcdn.net/v/t39.30808-6/463297676_8583180571769394_3280142447763525342_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeF6C3ZHBQ7kf5nEUzaKAmbXoCvMAMQMItqgK8wAxAwi2jd5JMtBxcZHH7o642gcayHGCa_y8GSKwuSAXCA-E03r&_nc_ohc=XZos1HSsgpMQ7kNvwEl21tc&_nc_oc=AdkxHnkiwU6MZmcv-GawMwxTtm9zysL0nqUjPydaCOrZ5295b-2M_RrAVSGbglFn564&_nc_zt=23&_nc_ht=scontent.fmnl17-8.fna&_nc_gid=oWYsc9szV2ayEfjCrjvELQ&oh=00_AfLm_7VJPvcz75VMcZjL65qciIiinve_bKuPhWWyL0S2-A&oe=681F286A" class="card-img-top" alt="Cavinti Underground River and Caves Complex">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Cavinti Underground River and Caves Complex</h5>
+              <p class="card-text small text-muted">
+                An eco-tourism site featuring a subterranean river, limestone caves, and adventure trails.
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+        <!--Japanese Garden in Cavinti-->
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <img class = "g-image" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhBJrdlIbozCQZ5YsJJS-ozwYR5X5P83eNVCQcRYU9Qam_UhZQ1v8fmHjooL8MaazpyuF_Nh00J590G5J7sjUJcuIqAekIPYA__w-64PQmFpRHMT6s_QfoCuiSl3tEK3mY6ewDnCN7dpqw/w1200-h630-p-k-no-nu/166320_1810915718601_1411246094_32044239_1861355_n.jpg" class="card-img-top" alt="Japanese Garden in Cavinti">
+            <div class="card-body">
+              <h5 class="card-title text-uppercase text-secondary-custom fw-bold fs-6">Japanese Garden in Cavinti</h5>
+              <p class="card-text small text-muted">
+                A memorial park commemorating Japanese soldiers from World War II, offering scenic views and tranquil surroundings.
+              </p>
+              <a href="tour9.html" class="btn btn-accent">View More</a>
+            </div>
+          </div>
+        </div>
+
+        
+        
+  </div>
+</div>
+
 </section>
-<section id="about" class="bg-white py-5 border-top border-3 border-info">
-  <div class="container d-flex justify-content-center">
-    <div class="col-lg-8">
-      <h2 class="text-center text-info fw-bold mb-4">About Us</h2>
-      <div class="bg-light p-4 rounded shadow-sm text-center">
-        <h4 class="text-info fw-semibold mb-3">Acla Dominic A.</h4>
-        <p class="text-muted">Acla Dominic is a dedicated co-founder of TravelTour, focused on delivering exceptional travel experiences and building seamless travel platforms for every adventurer.</p>
 
-        <hr class="my-4">
-
-        <h4 class="text-info fw-semibold mb-3">Bolilan Joshua A.</h4>
-        <p class="text-muted">Bolilan Joshua is the creative lead behind TravelTour, passionate about showcasing the beauty of global destinations through design, storytelling, and innovation.</p>
+<!-- About Us Section -->
+<section id="about" class="bg-light py-5 border-top border-3 border-info mt-5">
+  <div class="container">
+    <h2 class="text-center text-secondary-custom fw-bold mb-5">Meet the Team</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-4">
+        <div class="card border-info shadow-sm h-100">
+          <div class="card-body text-center">
+            <h4 class="text-info fw-semibold">Acla Dominic A.</h4>
+            <p class="text-muted">Acla Dominic serves as the strategic lead of TravelTour, ensuring each journey is smooth, secure, and unforgettable for every traveler.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-info shadow-sm h-100">
+          <div class="card-body text-center">
+            <h4 class="text-info fw-semibold">Bolilan Joshua A.</h4>
+            <p class="text-muted">Joshua handles design and user experience, crafting visually stunning and intuitive platforms that bring destinations to life.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-info shadow-sm h-100">
+          <div class="card-body text-center">
+            <h4 class="text-info fw-semibold">Reyes Mikaela J.</h4>
+            <p class="text-muted">Mikaela leads customer engagement, making sure every traveler feels supported, informed, and excited throughout their journey.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -221,40 +609,51 @@
 
 
 <!-- Contact Section -->
-<section class="bg-light py-5 border-top border-primary">
+<section class="bg-white py-5 border-top border-3 border-primary mt-5">
   <div class="container">
-    <h2 id="Contact" class="text-primary fw-bold text-center mb-4">Get in Touch</h2>
-    <div class="row g-4">
-      <div class="col-md-6">
-        <p><i class="bi bi-envelope-fill text-primary me-2"></i><strong>Email:</strong> dominic@gmail.com</p>
-        <p><i class="bi bi-telephone-fill text-primary me-2"></i><strong>Phone:</strong> +099111311111</p>
-        <p><i class="bi bi-geo-alt-fill text-primary me-2"></i><strong>Address:</strong> Cabuyao City, Laguna</p>
+    <h2 id="Contact" class="text-center fw-bold text-secondary-custom mb-5">Contact Us</h2>
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6">
+        <div class="bg-secondary-custom text-white p-4 rounded shadow-sm">
+          <h5 class="fw-semibold mb-3">Let's Talk</h5>
+          <p><i class="bi bi-envelope-fill me-2"></i><strong>Email:</strong> support@traveltour.com</p>
+          <p><i class="bi bi-telephone-fill me-2"></i><strong>Phone:</strong> +63 912 345 6789</p>
+          <p><i class="bi bi-geo-alt-fill me-2"></i><strong>Location:</strong> Cabuyao City, Laguna</p>
+          <p class="mt-4">Have a question or a destination in mind? Reach out—we're happy to help!</p>
+        </div>
       </div>
-      <div class="col-md-6">
-        <form>
-          <div class="mb-3">
-            <label for="contactName" class="form-label text-primary">Name</label>
-            <input type="text" class="form-control border-primary" id="contactName" placeholder="Your name">
-          </div>
-          <div class="mb-3">
-            <label for="contactMessage" class="form-label text-primary">Message</label>
-            <textarea class="form-control border-primary" id="contactMessage" rows="3" placeholder="Your message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary px-4">Send</button>
-        </form>
+      <div class="col-lg-6">
+        <div class="bg-light p-4 rounded shadow-sm">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label text-secondary-custom">Full Name</label>
+              <input type="text" class="form-control border-primary" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label text-secondary-custom">Email Address</label>
+              <input type="email" class="form-control border-primary" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label text-secondary-custom">Your Message</label>
+              <textarea class="form-control border-primary" id="message" rows="4" placeholder="Write your message..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent w-100">Send Message</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Newsletter Subscription -->
-<section class="bg-primary text-white text-center py-5">
-  <div class="container">
-    <h4 class="mb-3">Stay Updated</h4>
-    <p class="mb-4">Subscribe to our newsletter for the latest travel deals and tips.</p>
-    <form class="row justify-content-center">
-      <div class="col-md-4">
-        <input type="email" class="form-control mb-2" placeholder="Enter your email">
+
+<!-- Newsletter Section -->
+<section class="text-white w-100 mt-5" style="background: linear-gradient(135deg, #003d5b, #579ed8);">
+  <div class="w-100 px-4 py-5 text-center">
+    <h2 class="fw-bold mb-3">Join Our Travel Community</h2>
+    <p class="mb-4">Subscribe to receive exclusive travel tips, guides, and destination deals straight to your inbox.</p>
+    <form class="row justify-content-center g-2">
+      <div class="col-md-5">
+        <input type="email" class="form-control" placeholder="Enter your email address" required>
       </div>
       <div class="col-md-2">
         <button type="submit" class="btn btn-light w-100">Subscribe</button>
@@ -264,11 +663,12 @@
 </section>
 
 <!-- Footer -->
-<footer class="bg-dark text-white text-center py-3">
-  <div class="container">
+<footer class="bg-dark text-white text-center py-3 w-100">
+  <div class="w-100 px-4">
     &copy; 2025 TravelTour. All rights reserved.
   </div>
 </footer>
+
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
