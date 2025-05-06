@@ -22,7 +22,7 @@
     }
 
     .carousel-inner img {
-          height: 600px; /* Adjust height as needed */
+          height: 600px; 
           object-fit: cover;
     }
 
@@ -49,18 +49,16 @@
     }
 
     .card:hover {
-      transform: translateY(-10px); /* Elevate the card */
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); /* Add shadow for floating effect */
+      transform: translateY(-10px); 
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15); 
     }
 
-   /* Define custom color variables */
-    :root {
-      --primary-color: #003d5b;      /* Emerald Green */
-      --secondary-color: #30638e;    /* Sunflower Yellow */
 
-      --deep-blue: #264653;          /* Sky Gray Blue */
-      --light-bg: #c2d4e4;           /* Cream White */
-      --dark-text: #2B2B2B;          /* Slate Black */
+    :root {
+      --primary-color: #003d5b;      
+      --secondary-color: #30638e; 
+      --deep-blue: #264653;         
+      --light-bg: #c2d4e4;               
     }
 
     /* Common Section Styling */
@@ -82,10 +80,7 @@
       color: white;
     }
 
-    .text-dark-custom {
-      color: var(--dark-text) !important;
-    }
-
+    
     /* Button Styles */
     .btn-accent {
       background-color: var(--secondary-color);
@@ -97,11 +92,7 @@
       color: white;
     }
 
-    /* Optional: Header Styling */
-    .section-header {
-      color: var(--primary-color);
-      font-weight: bold;
-    }
+
 
     /* Footer styling */
     .footer-bg {
@@ -113,7 +104,38 @@
       color: var(--secondary-color) !important;
     }
 
-    
+     /* Sidebar behavior on small screens */
+     @media (max-width: 991.98px) {
+      .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: #0d6efd;
+        padding-top: 4rem;
+        z-index: 1050;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
+      }
+
+      .navbar-collapse.collapsing {
+        transform: translateX(100%);
+      }
+
+      .navbar-collapse.show {
+        transform: translateX(0);
+      }
+
+      .navbar-nav .nav-link {
+        color: white;
+        padding: 1rem 1.5rem;
+      }
+
+      .navbar-toggler {
+        z-index: 1060;
+      }
+    }
 
    
 
@@ -121,29 +143,32 @@
 </head>
 <body class="wrapper">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="index.html">TravelTour</a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navContent">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Tours</a></li>
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-        <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">Hulagway Laguna</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Right Sidebar (collapsible) -->
+      <div class="collapse navbar-collapse bg-primary-custom" id="sidebarMenu">
+        <ul class="navbar-nav flex-column flex-lg-row ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="delicacies.html">Delicacies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 <!-- Header -->
+
 <header class="bg-secondary-custom text-white text-center py-5">
-    <div class="container">
-      <h1 class="display-5 fw-semibold">Explore Our Top 10 Tourist Spots</h1>
-      <p class="lead">Discover the world's most iconic destinations!</p>
+    <div class="container mt-5">
+      <h1 class="display-5 fw-semibold">Welcome to Laguna!</h1>
+      <p class="lead">where beauty thrives, magic lives, and breathtaking adventures begin.</p>
       <h5 id="userGreeting" class="mt-4 fw-light"></h5>
     </div>
   </header>
@@ -175,7 +200,7 @@
   
   <!-- Popular Destinations-------------------------------------------------------------------- -->
   <section class="container my-5">
-    <h2 class="section-title fw-bold mb-4">Popular Destinations</h2>
+    <h2 class="section-title fw-bold mb-4">Popular Cities</h2>
     <div id="popularDestinationsCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
 
@@ -424,7 +449,7 @@
               <p class="card-text small text-muted">
                 Famous for housing the image of Our Lady of Turumba and its annual religious festivals.
               </p>
-              <a href="tour9.html" class="btn btn-accent">View More</a>
+              <a href="st_peter.html" class="btn btn-accent">View More</a>
             </div>
           </div>
         </div>
@@ -438,7 +463,7 @@
               <p class="card-text small text-muted">
                 Pila in Laguna is a National Historical Landmark featuring well-preserved Spanish-era houses and a charming town plaza.
               </p>
-              <a href="tour9.html" class="btn btn-accent">View More</a>
+              <a href="pila.html" class="btn btn-accent">View More</a>
             </div>
           </div>
         </div>
@@ -452,7 +477,7 @@
               <p class="card-text small text-muted">
                 A 25-hectare amusement park in Santa Rosa offering themed zones, thrilling rides, and family-friendly attractions. 
               </p>
-              <a href="tour9.html" class="btn btn-accent">View More</a>
+              <a href="ek.html" class="btn btn-accent">View More</a>
             </div>
           </div>
         </div>
@@ -466,7 +491,7 @@
               <p class="card-text small text-muted">
                 A secluded resort in Caluan featuring natural hot springs, waterfalls, and lush tropical gardens.
               </p>
-              <a href="tour9.html" class="btn btn-accent">View More</a>
+              <a href="hvs.html" class="btn btn-accent">View More</a>
             </div>
           </div>
         </div>
@@ -480,7 +505,7 @@
               <p class="card-text small text-muted">
                 Located in San Pablo, this resort offers cold spring pools surrounded by verdant landscapes.
               </p>
-              <a href="tour9.html" class="btn btn-accent">View More</a>
+              <a href="bato_spring.html" class="btn btn-accent">View More</a>
             </div>
           </div>
         </div>
@@ -494,7 +519,7 @@
               <p class="card-text small text-muted">
                 Situated in Los Baños, it offers adventure activities like zip-lining, kayaking, and cliff diving by the lake. 
               </p>
-              <a href="tour9.html" class="btn btn-accent">View More</a>
+              <a href="laresio.html" class="btn btn-accent">View More</a>
             </div>
           </div>
         </div>
@@ -508,7 +533,7 @@
               <p class="card-text small text-muted">
                 A cultural resort straddling Laguna and Quezon, known for its waterfall restaurant and museum of Filipino artifacts. 
               </p>
-              <a href="tour9.html" class="btn btn-accent">View More</a>
+              <a href="villa.html" class="btn btn-accent">View More</a>
             </div>
           </div>
         </div>
@@ -522,7 +547,7 @@
               <p class="card-text small text-muted">
                 An eco-tourism site featuring a subterranean river, limestone caves, and adventure trails.
               </p>
-              <a href="tour9.html" class="btn btn-accent">View More</a>
+              <a href="cavinti_caves.html" class="btn btn-accent">View More</a>
             </div>
           </div>
         </div>
@@ -536,7 +561,7 @@
               <p class="card-text small text-muted">
                 A memorial park commemorating Japanese soldiers from World War II, offering scenic views and tranquil surroundings.
               </p>
-              <a href="tour9.html" class="btn btn-accent">View More</a>
+              <a href="japanese_garden.html" class="btn btn-accent">View More</a>
             </div>
           </div>
         </div>
