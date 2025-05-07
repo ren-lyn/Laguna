@@ -99,34 +99,35 @@ body, html {
 
    /* Sidebar behavior on small screens */
    @media (max-width: 991.98px) {
-    .navbar-collapse {
-      position: fixed;
-      top: 0;
-      right: 0;
-      height: 100vh;
-      width: 250px;
-      background-color: #0d6efd;
-      padding-top: 4rem;
-      z-index: 1050;
-      transition: transform 0.3s ease;
-      transform: translateX(100%);
-    }
+        .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 250px;
+        background-color: #0d6efd;
+        padding-top: 4rem;
+        z-index: 1050;
+        transition: transform 0.3s ease;
+        transform: translateX(100%);
+        }
 
-    .navbar-collapse.collapsing {
-      transform: translateX(100%);
-    }
+        .navbar-collapse.collapsing {
+        transform: translateX(100%);
+        }
 
-    .navbar-collapse.show {
-      transform: translateX(0);
-    }
+        .navbar-collapse.show {
+        transform: translateX(0);
+        }
 
-    .navbar-nav .nav-link {
-      color: white;
-      padding: 1rem 1.5rem;
-    }
+        .navbar-nav .nav-link {
+        color: white;
+        padding: 1rem 1.5rem;
+        }
 
-    .navbar-toggler {
-      z-index: 1060;
+        .navbar-toggler {
+        z-index: 1060;
+        }
     }
   
 
@@ -160,6 +161,6 @@ body, html {
   }
 
   
-}
+
 
   
