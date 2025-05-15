@@ -84,9 +84,12 @@
   }
 
   .image-fixed {
-    height: 600px;
-    object-fit: cover;
+    aspect-ratio: 16 / 9;
     width: 100%;
+    object-fit: cover;
+    height: auto;
+    max-height: 500px; /* optional: to restrict height */
+    border-radius: 10px;
   }
 
    /* Sidebar behavior on small screens */
